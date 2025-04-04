@@ -1,0 +1,31 @@
+local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/madmad7070/guid/refs/heads/main/dd"))()
+
+local Window = WindUI:CreateWindow({
+    Title = "{⚔️} - 일간 스크립트 베스트",
+    Icon = "door-open",
+    Author = "by. 4lf0rkz",
+    Folder = "{⚔️} - 일스베",
+    Size = UDim2.fromOffset(580, 460),
+    Transparent = true,
+    Theme = "Dark",
+    SideBarWidth = 200,
+    HasOutline = false,
+}) 
+
+local Tabs = {
+    Tab = Window:Tab({ Title = "{⚔️} -  가강전", Icon = "null", Desc = "가강전의 스크립트들을 모은 탭." }),
+}
+    Tabs.Tab:Section({ Title = "{⚔️} - 베스트 스크립트" })
+Tabs.Tab:Button({
+    Title = "{✨️} - all fling",
+    Desc = "전부 날려버리는 핵이다.",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/madmad7070/allfling/refs/heads/main/allfling"))()
+ end
+})
+
+Tabs.Tab:Button({
+    Title = "{✨️} - fling",
+    Desc = "원하는 사람을 날려버리는 핵이다.",
+    Callback = function() loadstring(game:HttpGet("https://raw.githubusercontent.com/madmad7070/fling/refs/heads/main/fling"))()
+ end
+})
